@@ -2,8 +2,19 @@
 
 [![Domain: E-Commerce](https://img.shields.io/badge/Domain-Indian%20E--Commerce-orange.svg)](#)
 [![Dataset: 500 Records](https://img.shields.io/badge/Dataset-500%20Records-blue.svg)](#)
-[![Tools: Excel | Python | PowerBI](https://img.shields.io/badge/Tools-Excel%20%7C%20Python%20%7C%20PowerBI-green.svg)](#)
+[![Tools: Python | Excel | PowerBI](https://img.shields.io/badge/Tools-Python%20%7C%20Excel%20%7C%20PowerBI-green.svg)](#)
 [![Status: Completed](https://img.shields.io/badge/Status-Completed-success.svg)](#)
+[![Executive Deck: PDF](https://img.shields.io/badge/Presentation-5--Slide%20Deck%20(PDF)-red.svg)](reports/Executive_Presentation_Deck.pdf)
+
+---
+
+## Executive Deliverables & Quick Links
+
+* 📊 **Interactive Dashboard Preview**: [View Below](#executive-dashboard-preview)
+* 📑 **Executive Presentation Deck (PDF)**: [Download 5-Slide Executive Deck](reports/Executive_Presentation_Deck.pdf)
+* 📝 **Executive Briefing & Interview Defense**: [Read Executive Presentation Document](reports/Executive_Presentation.md)
+* 🛠️ **Power BI & Tableau Architecture Guide**: [Read BI Implementation Guide & DAX Measures](reports/BI_Dashboard_Guide.md)
+* 📈 **Automated Analytics Engine**: [View Python EDA Script](analysis.py)
 
 ---
 
@@ -20,21 +31,22 @@
 3. [Objective](#objective)
 4. [Business Problem](#business-problem)
 5. [Repository Structure](#repository-structure)
-6. [Market Research Framework](#market-research-framework)
-7. [Competitor Analysis Framework](#competitor-analysis-framework)
-8. [Dataset Description](#dataset-description)
-9. [Analysis Performed](#analysis-performed)
-10. [Dashboard Features](#dashboard-features)
-11. [Key Insights](#key-insights)
-12. [Strategic Recommendations](#strategic-recommendations)
-13. [How to Run the Analysis](#how-to-run-the-analysis)
-14. [Conclusion](#conclusion)
+6. [Key Visualizations & Analytics](#key-visualizations--analytics)
+7. [Statistical Correlation & Driver Analysis](#statistical-correlation--driver-analysis)
+8. [Market Research Framework](#market-research-framework)
+9. [Competitor Analysis Framework](#competitor-analysis-framework)
+10. [Dataset Description](#dataset-description)
+11. [Dashboard Features](#dashboard-features)
+12. [Key Insights](#key-insights)
+13. [Strategic Recommendations](#strategic-recommendations)
+14. [How to Run the Analysis](#how-to-run-the-analysis)
+15. [Conclusion](#conclusion)
 
 ---
 
 ## Project Overview
 
-This project focuses on conducting comprehensive market research and competitor analysis within the Indian e-commerce industry. The objective is to analyze market dynamics, evaluate competitor performance, identify customer preferences, and uncover strategic opportunities through data-driven insights and interactive dashboard reporting.
+This project focuses on conducting comprehensive market research and competitor analysis within the Indian e-commerce industry. The objective is to analyze market dynamics, evaluate competitor performance, identify customer preferences, and uncover strategic opportunities through data-driven insights, statistical modeling, and interactive executive reporting.
 
 ---
 
@@ -45,11 +57,13 @@ Based on the 500-record benchmark dataset across major Indian e-commerce players
 | Metric | Value | Description |
 |---|---|---|
 | **Total Analyzed Records** | 500 | Market observation and benchmarking entries |
-| **Tracked Companies** | 10 | Major e-commerce platforms in India |
+| **Tracked Competitors** | 10 | Major e-commerce platforms in India |
 | **Average Market Share** | 22.47% | Benchmark market presence per category/region |
 | **Average Customer Rating** | 4.37 / 5.0 | Overall product satisfaction across platforms |
 | **Average CSAT Score** | 85.28 / 100 | Customer satisfaction benchmark index |
 | **Average Growth Rate** | 12.60% | Annualized market expansion rate |
+| **Average Product Price** | ₹26,685.32 | Mean category pricing across catalog |
+| **Average Competitor Price** | ₹26,749.20 | Mean rival price level (0.998 Parity Index) |
 | **Total Revenue Estimate** | ₹17.92M (index) | Aggregate segment revenue estimate |
 
 ---
@@ -62,7 +76,7 @@ The primary objective of this project is to:
 * Analyze competitor strengths and weaknesses
 * Evaluate customer satisfaction and feedback trends
 * Identify market gaps and growth opportunities
-* Support strategic business decision-making through data visualization and benchmarking
+* Support strategic business decision-making through data visualization and statistical benchmarking
 
 ---
 
@@ -78,7 +92,7 @@ Businesses often face challenges such as:
 * Identifying untapped regional and demographic opportunities
 * Differentiating products, logistics, and pricing strategies
 
-This project aims to address these challenges by providing actionable market intelligence and competitor insights.
+This project addresses these challenges by providing actionable market intelligence, statistical driver analysis, and competitor insights.
 
 ---
 
@@ -91,8 +105,47 @@ Market-Research-Competitor-Analysis-Report/
 ├── requirements.txt                           # Python dependencies for analysis script
 ├── dashboard.png                              # High-resolution interactive dashboard preview
 ├── Ecommerce_Market_Research_500_Rows.xlsx    # Full 500-record market research dataset
-└── analysis.py                                # Automated Python EDA and benchmarking script
+├── analysis.py                                # Automated Python EDA, correlation & reporting engine
+├── reports/
+│   ├── Executive_Presentation_Deck.pdf        # 5-Slide C-level Executive Presentation Deck
+│   ├── Executive_Presentation.md              # Executive briefing document & interview defense notes
+│   └── BI_Dashboard_Guide.md                  # Power BI/Tableau data architecture & DAX measures guide
+└── visuals/
+    ├── 1_competitor_market_share.png          # Market share horizontal benchmark chart
+    ├── 2_pricing_vs_rating_positioning.png    # Product positioning quadrant (Price vs. Rating)
+    ├── 3_regional_growth_and_csat.png         # Dual-axis regional growth & CSAT comparison
+    ├── 4_metric_correlation_heatmap.png       # Pearson correlation matrix heatmap
+    └── 5_customer_feedback_breakdown.png      # Customer sentiment donut distribution
 ```
+
+---
+
+## Key Visualizations & Analytics
+
+### 1. Competitor Market Share Benchmarking
+![Competitor Market Share](visuals/1_competitor_market_share.png)
+
+### 2. Product Positioning Matrix (Price vs. Rating)
+![Product Positioning Matrix](visuals/2_pricing_vs_rating_positioning.png)
+
+### 3. Regional Performance: Growth Rate vs. CSAT
+![Regional Performance](visuals/3_regional_growth_and_csat.png)
+
+### 4. Customer Feedback Distribution
+![Customer Feedback Sentiment](visuals/5_customer_feedback_breakdown.png)
+
+---
+
+## Statistical Correlation & Driver Analysis
+
+Using the automated Python analytics engine ([analysis.py](analysis.py)), Pearson correlation coefficients were calculated across all numerical business metrics:
+
+![Metric Correlation Heatmap](visuals/4_metric_correlation_heatmap.png)
+
+### Key Analytical Findings:
+* **The Price Parity Trap ($r = 0.076$ between Price and CSAT):** Product price exhibits virtually no direct correlation with customer satisfaction. In the modern Indian e-commerce space, consumers expect competitive pricing as a baseline; true satisfaction is dictated by delivery SLA compliance, catalog freshness, and resolution speeds.
+* **Pricing Competitiveness Index ($0.998$):** The ratio of Product Price (₹26,685) to Competitor Price (₹26,749) demonstrates strict algorithmic pricing parity across platforms.
+* **Regional Growth Divergence:** West India leads in annualized growth (13.11%), while East India demonstrates the highest overall CSAT (85.50), highlighting East India as an underserved market ready for fulfillment expansion.
 
 ---
 
@@ -113,7 +166,7 @@ The market research process followed these stages:
 * Industry Growth Trajectory
 * Customer Preferences & Satisfaction
 * Regional Performance (North, South, East, West India)
-* Product & Service Categories (Fashion, Beauty, Electronics, Grocery, etc.)
+* Product & Service Categories (Fashion, Beauty, Electronics, Grocery, Home)
 * Emerging Trends (M-commerce, Quick Commerce, Hyperlocal Delivery)
 
 ---
@@ -183,30 +236,6 @@ The dataset consists of 500 records representing market and competitor informati
 
 ---
 
-## Analysis Performed
-
-### Market Analysis
-* Market Share Distribution across players
-* Industry Growth Rate benchmarking
-* Regional Performance across 4 Indian geographic divisions
-
-### Customer Analysis
-* Customer Satisfaction Score (CSAT) evaluation
-* Sentiment & Feedback Category distribution
-* Target customer demographic segmentation
-
-### Competitor Analysis
-* Direct Competitor Benchmarking across price and reach
-* Pricing Comparison (Product Price vs. Competitor Price)
-* Digital presence (Traffic vs. Social Media following)
-
-### Strategic Analysis
-* SWOT Analysis matrix formulation
-* Market gap and untapped segment identification
-* Competitive positioning grid
-
----
-
 ## Dashboard Features
 
 ### KPI Cards
@@ -239,8 +268,8 @@ The dataset consists of 500 records representing market and competitor informati
 
 ## Key Insights
 
-* **Market Leadership**: Amazon India and Flipkart maintain leading market share and highest brand awareness.
-* **Rapid Growth in Value Segment**: Meesho exhibits strong growth momentum in the budget-conscious and social commerce segment.
+* **Market Leadership**: Amazon India (25.1%) and Flipkart (22.9%) maintain leading market share and highest brand awareness.
+* **Rapid Growth in Value Segment**: Meesho exhibits the fastest annualized growth (13.8% YoY) driven by social commerce and zero-commission seller models.
 * **Fulfillment as a Differentiator**: Customer satisfaction is most heavily correlated with delivery turnaround time and pricing transparency.
 * **Regional Opportunity**: Tier-2 and Tier-3 cities across East and West India represent the fastest-growing customer acquisition opportunity.
 * **Mobile & Digital Surge**: Mobile commerce continues to drive over 70% of consumer purchase journeys.
@@ -249,44 +278,41 @@ The dataset consists of 500 records representing market and competitor informati
 
 ## Strategic Recommendations
 
-### Customer Experience
-* Improve first-contact customer support resolution rates.
-* Optimize regional fulfillment hubs to reduce last-mile delivery times.
+### Pillar 1: Regional Fulfillment Optimization
+* Expand Tier-2 and Tier-3 micro-warehousing hubs across East and West India.
+* Target sub-48-hour delivery SLAs to address primary negative customer feedback.
 
-### Market Expansion
-* Deepen penetration into Tier-2 and Tier-3 regional hubs.
-* Provide localized language support and vernacular shopping interfaces.
+### Pillar 2: Transition from Discounts to Tiered Loyalty
+* Replace transactional promo codes with an engagement-driven loyalty program.
+* Offer zero-threshold free shipping and early-access sales to increase repeat purchase rates.
 
-### Product & Pricing Strategy
-* Introduce exclusive brand partnerships and private labels to preserve margins.
-* Deploy dynamic pricing models to remain competitive against rival offerings.
-
-### Competitive Positioning
-* Strengthen tiered loyalty programs (free shipping, early access).
-* Invest in personalized recommendation engines powered by customer browsing intent.
+### Pillar 3: Vernacular & AI Search Personalization
+* Deploy vernacular voice search to capture non-metro demographics.
+* Implement personalized category recommendation algorithms to lift Average Order Value (AOV).
 
 ---
 
 ## How to Run the Analysis
 
-### Prerequisites
+### 1. Prerequisites
 * Python 3.8+
-* Microsoft Excel or Power BI Desktop (for dashboard exploration)
-
-### 1. Install Dependencies
+* Install required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Execute Data Analysis Script
+### 2. Execute Data Analytics & Report Generation
+Run the end-to-end analytical pipeline to compute KPIs, calculate statistical correlations, generate visual charts, and produce the executive PDF slide deck:
 ```bash
 python analysis.py
 ```
+
+All generated charts will be output to `visuals/`, and the executive presentation deck will be saved to `reports/Executive_Presentation_Deck.pdf`.
 
 ---
 
 ## Conclusion
 
-This project demonstrates how market research and competitor analysis support strategic decision-making within the e-commerce industry. By combining qualitative strategic frameworks (SWOT, Benchmarking) with quantitative analytics and interactive dashboarding, businesses can uncover growth avenues and optimize competitive positioning.
+This project demonstrates how market research and competitor analysis support strategic decision-making within the e-commerce industry. By combining qualitative strategic frameworks (SWOT, Benchmarking) with quantitative analytics, statistical correlation modeling, and executive presentation artifacts, businesses can uncover growth avenues and optimize competitive positioning.
 
 The methodologies and outputs showcased here are directly applicable to **Business Analyst**, **Market Research Analyst**, **Strategy Analyst**, **Product Analyst**, and **Business Intelligence** workflows.
