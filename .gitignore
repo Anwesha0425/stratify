@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Microsoft Excel temporary lock files
+~$*.xlsx
+~$*.xls
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
