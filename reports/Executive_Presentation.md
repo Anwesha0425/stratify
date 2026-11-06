@@ -1,8 +1,8 @@
-# Executive Presentation: Indian E-Commerce Market Intelligence & Competitor Strategy
+# Stratify: Indian E-Commerce Market Intelligence & Competitor Strategy
 
 **Target Audience:** Vice President of Strategy / Chief Commercial Officer  
 **Author:** Anwesha Gouda  
-**Project:** Market Research & Competitor Analysis Report  
+**Project:** Stratify (Market Research & Competitor Analysis Report)  
 **Format:** 5-Slide Executive Deck Companion ([Download Slide Deck PDF](Executive_Presentation_Deck.pdf))
 
 ---
@@ -118,3 +118,4 @@ When presenting this project to interviewers:
 1. **Opening Hook:** *"I evaluated 500 competitive records across 10 major players to identify where price competition ends and operational defensibility begins."*
 2. **The Metric That Matters:** Point out that price parity is virtually 1:1 ($r \approx 0$), proving that customer loyalty in Indian e-commerce is won on fulfillment turnaround and regional reach, not marginal price cuts.
 3. **The Strategic Recommendation:** Pitch the 3-pillar roadmap with concrete business metrics (reducing RTO, increasing 90-day repeat purchase rate, and expanding into East/West Tier-2 clusters).
+

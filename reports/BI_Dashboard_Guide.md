@@ -161,3 +161,4 @@ Configure the following interactive slicer panel on the top or left margin:
    - Follow the canvas layout specifications in Section 3 and align with `dashboard.png`.
 5. **Publish**:
    - Click `Publish` -> Select workspace in Power BI Service -> Generate a Public or Organization share link to include in your portfolio.
+

@@ -1,4 +1,4 @@
-# Market Research & Competitor Analysis Report
+# Stratify: Market Research & Competitor Analysis Report
 
 [![Domain: E-Commerce](https://img.shields.io/badge/Domain-Indian%20E--Commerce-orange.svg)](#)
 [![Dataset: 500 Records](https://img.shields.io/badge/Dataset-500%20Records-blue.svg)](#)
@@ -99,7 +99,7 @@ This project addresses these challenges by providing actionable market intellige
 ## Repository Structure
 
 ```text
-Market-Research-Competitor-Analysis-Report/
+Stratify/
 ├── .gitignore                                 # Git ignore patterns for temp/cache files
 ├── README.md                                  # Comprehensive project documentation & report
 ├── requirements.txt                           # Python dependencies for analysis script
